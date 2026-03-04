@@ -25,7 +25,6 @@ START()
 	echo "  POL has finished running"
 	echo "============================="
 	echo ""
-	read -r -p "Press Enter to continue..."
 	START
 	}
 
