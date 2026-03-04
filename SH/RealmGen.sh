@@ -22,6 +22,7 @@ MULTIS.CFG()
 	if [ ${BUILD_ALL} == 1 ]
 		then TILES.CFG
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -33,6 +34,7 @@ TILES.CFG()
 	if [ ${BUILD_ALL} == 1 ]
 		then LANDTILES.CFG
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -44,6 +46,7 @@ LANDTILES.CFG()
 	if [ ${BUILD_ALL} == 1 ]
 		then BUILD_ALL=0
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -52,6 +55,7 @@ ALLCONFIGS()
 	{
 	BUILD_ALL=1
 	MULTIS.CFG
+	read -r -p "Press Enter to continue..."
 	}
 	
 #-- REALM_BRITANNIA()
@@ -73,6 +77,7 @@ REALM_BRITANNIA()
 	if [ ${BUILD_ALL} == 1 ]
 		then REALM_BRITANNIA_ALT
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -85,6 +90,7 @@ REALM_BRITANNIA_ALT()
 	if [ ${BUILD_ALL} == 1  ]
 		then REALM_ILSHENAR
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -97,6 +103,7 @@ REALM_ILSHENAR()
 	if [ ${BUILD_ALL} == 1 ]
 		then REALM_MALAS
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -109,6 +116,7 @@ REALM_MALAS()
 	if [ ${BUILD_ALL} == 1 ]
 		then REALM_TOKUNO
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -121,6 +129,7 @@ REALM_TOKUNO()
 	if [ ${BUILD_ALL} == 1 ]
 		then REALM_TERMUR
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
     
@@ -133,6 +142,7 @@ REALM_TERMUR()
 	if [ ${BUILD_ALL} == 1 ]
 		then BUILD_ALL=0
 		fi
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
@@ -159,6 +169,7 @@ COPY_CLIENT_FILES()
 	cp "${UOPATH}/staidx*" MUL/
 	cp "${UOPATH}/statics*" MUL/
 	cp "${UOPATH}/tiledata.mul" MUL/
+	read -r -p "Press Enter to continue..."
 	RETURN_TO_MENU
 	}
 	
