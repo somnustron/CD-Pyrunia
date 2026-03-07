@@ -7,5 +7,5 @@ ECOMPILE_PATH="scripts\ecompile"
 
 
 $ECOMPILE_PATH -b -r 2>&1 > ecompile.log
-
+read -r -p "Press Enter to continue..."
 exit 0

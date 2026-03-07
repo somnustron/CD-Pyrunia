@@ -293,11 +293,11 @@ function GetTrueEffectiveSkill(who, skillid)
   var base := GetAttributeBaseValue(who, id);
   var mod1 := GetAttributeTemporaryMod(who, id);
   var mod2 := GetAttributeIntrinsicMod(who, id);
-  var true := Cdbl((base + mod1 + mod2)/ 10.0);
-  if(true < 0.0)
+  var effective := Cdbl((base + mod1 + mod2)/ 10.0);
+  if(effective < 0.0)
     return 0.0;
   else
-    return true;
+    return effective;
   endif
 endfunction
 
